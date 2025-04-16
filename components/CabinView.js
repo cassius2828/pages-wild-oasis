@@ -3,7 +3,7 @@ import { EyeSlashIcon, MapPinIcon, UsersIcon } from '@heroicons/react/24/solid';
 import TextExpander from './TextExpander';
 
 function CabinView({ cabin }) {
-  const { id, name, maxCapacity, regularPrice, discount, image, description } =
+  const { id, name, max_capacity, regular_price, discount, image, description } =
     cabin;
 
   return (
@@ -31,7 +31,7 @@ function CabinView({ cabin }) {
           <li className='flex gap-3 items-center'>
             <UsersIcon className='h-5 w-5 text-primary-600' />
             <span className='text-lg'>
-              For up to <span className='font-bold'>{maxCapacity}</span> guests
+              For up to <span className='font-bold'>{max_capacity}</span> guests
             </span>
           </li>
           <li className='flex gap-3 items-center'>
